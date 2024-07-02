@@ -12,20 +12,19 @@ import CountUp from "react-countup";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-cover bg-center space-y-10">
-      <div className=" mt-10 max-w-xl p-8 bg-black bg-opacity-60 rounded-lg text-white text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-4">
+    <section className="flex flex-col items-center justify-center h-screen bg-cover bg-center space-y-10 px-4">
+      <div className="mt-10 max-w-xl p-8 bg-black bg-opacity-60 rounded-lg text-white text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           <span className="text-white">Welcome to </span>
           <span className="text-green-400">Renewablexchange</span>
         </h1>
-        <p className="text-lg md:text-xl mb-6">
-          Discover and trade green energy from micro-grids and macro-grids
-          across India. Support sustainable energy and secure transactions with
-          <span className="text-purple-600"> cryptocurrency.</span>
+        <p className="text-lg md:text-xl mt-6">
+          Discover and learn about green energy produced across India. 
+          Support sustainable energy and make responsible descisions.
         </p>
       </div>
 
-      <div className="max-w-xl p-3 bg-black bg-opacity-80 rounded-sm text-white text-center">
+      <div className="max-w-xl p-3 bg-black bg-opacity-80 rounded-sm text-white text-center px-4">
         <p className="text-lg md:text-xl">
           India's current renewable energy capacity:
           <span className="text-green-400 ml-2">
@@ -36,13 +35,12 @@ const HeroSection: React.FC = () => {
         </p>
       </div>
 
-      <div className="w-full max-w-5xl p-5 bg-black bg-opacity-60 rounded-lg text-white text-center">
+      <div className="w-full max-w-5xl p-5 bg-black bg-opacity-60 rounded-lg text-white text-center px-4">
         <p className="text-lg md:text-xl">
-          <span className="text-green-400">Renewablexchange</span> enables users
-          to discover and trade green energy from micro-grids and macro-grids
-          across India, promoting sustainable energy usage and secure
-          cryptocurrency transactions, addressing the critical need for
-          accessible renewable energy and reducing carbon footprints.
+          <span className="text-green-400">Renewablexchange</span> enables it's users to 
+          discover and learn about the green energy production and cultivation across India. 
+          This AI powered website will help the business leaders and common man to make informed 
+          decisions to contribute towards sustainability goals.
         </p>
       </div>
     </section>
