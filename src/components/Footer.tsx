@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         </p>
         <p className='text-gray-300 pr-10 text-center hidden md:inline'>version 1.0.0 - alpha build</p>
         <a
-          href="https://github.com/vedantabanerjee/renewablexchange_app"
+          href="https://github.com/vedantabanerjee/greenindia_app"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center text-white hover:text-gray-400 transition duration-300 pr-5 justify-center"
