@@ -16,11 +16,11 @@ const HeroSection: React.FC = () => {
       <div className="mt-10 max-w-xl p-8 bg-black bg-opacity-60 rounded-lg text-white text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           <span className="text-white">Welcome to </span>
-          <span className="text-green-400">Renewablexchange</span>
+          <span className="text-green-400"> GreenIndia</span>
         </h1>
         <p className="text-lg md:text-xl mt-6">
           Discover and learn about green energy produced across India. 
-          Support sustainable energy and make responsible descisions to fight climate change.
+          Support sustainable energy and make responsible decisions to fight climate change.
         </p>
       </div>
 
@@ -37,8 +37,9 @@ const HeroSection: React.FC = () => {
 
       <div className="w-full max-w-5xl p-5 bg-black bg-opacity-60 rounded-lg text-white text-center px-4">
         <p className="text-lg md:text-xl">
-          <span className="text-green-400">Renewablexchange</span> enables it's users to 
-          discover and learn about climate change, the green energy production and sustainability efforts across India. 
+        Welcome to our website dedicated to promoting sustainable goals and <span className="text-green-400"> green energy </span>  initiatives in India. 
+        Our platform serves as a hub for information, infographics, and actionable insights into the impact of 
+        climate change and the efforts being made to combat it across the country. 
         </p>
       </div>
     </section>

@@ -69,7 +69,7 @@ const ChatPage = () => {
         <>
           <div className="flex justify-center mt-10 text-lg">
             <h1>
-              <b>Welcome to renewxB0t!</b>
+              <b>Welcome to GreenB0t!</b>
             </h1>
           </div>
           <div className="mx-auto max-w-lg my-8 bg-white rounded-lg shadow-md overflow-hidden">

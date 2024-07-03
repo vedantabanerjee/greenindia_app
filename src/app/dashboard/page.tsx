@@ -9,6 +9,9 @@ FEATURES:
 
 import React from "react";
 import Map from "@/components/Map";
+import Graphs from "@/components/Graphs";
+import Chart from "@/components/Charts";
+
 
 export default function Dashboard() {
   return (
@@ -20,6 +23,28 @@ export default function Dashboard() {
             Map of Microgrids and Macrogrids in India
           </h2>
           <Map />
+        </div>
+      </div>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-center">
+        <span className="text-green-400">Green</span> Trends in India
+      </h1>
+      <div className="text-xs md:text-sm text-gray-400 pb-4 md:pb-10 text-center">
+        <p>
+          All the data is according to latest Annual Report (2022-2023) by the
+          Ministry of New and Renewable Energy and other publicly disclosed
+          sources*
+        </p>
+      </div>
+      <div className="w-full">
+        <div className="flex flex-col md:flex-row gap-4 mb-10">
+          <div className="flex justify-center items-center w-full md:w-2/4">
+            {/* Displays various graphs */}
+            <Graphs />
+          </div>
+          <div className=" flex justify-center items-center w-full md:w-1/3">
+            {/* Displays a chart */}
+            <Chart />
+          </div>
         </div>
       </div>
       <div className="flex text-sm text-gray-400">

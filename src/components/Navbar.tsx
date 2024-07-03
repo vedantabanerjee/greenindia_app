@@ -7,8 +7,8 @@ const Navbar = () => {
   const navLinks = [
     { title: "Home", url: "/" },
     { title: "Dashboard", url: "/dashboard" },
+    { title: "Blogs", url: "/blog" },
     { title: "Chat", url: "/chat" },
-    { title: "Info", url: "/info" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex h-14 items-center justify-between border-b border-zinc-200">
           <Link href={"/"}>
             <span className="flex z-40 font-semibold cursor-pointer">
-              <span className="text-green-500">Renewable </span>xchange
+              <span className="text-green-500">Green </span>India
             </span>
           </Link>
           <div className="h-full flex items-center space-x-4">
