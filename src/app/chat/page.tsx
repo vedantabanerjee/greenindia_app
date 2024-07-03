@@ -1,18 +1,24 @@
 /* 
 THIS IS THE CHAT PAGE
 FEATURES:
-  - Take the input prompt from the input box and then sent it to some llm's completions end-point and retrive the JSON output and stringyfy it to std::out
+  - Take the input prompt from the input box and then sent it to some llm's completions end-point and retrieve the JSON output and stringify it to std::out
   - The llm should be trained and focused on two things:
-    - The corpus of data dealing with the microgrids and macrogrids and their enerygy production
-    - general data about sustainablity and green energy to help customers figure out what's right for them
+    - The corpus of data dealing with the microgrids and macrogrids and their energy production
+    - general data about sustainability and green energy to help customers figure out what's right for them
 */
 
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
+// Define a type for the message
+type Message = {
+  text: string;
+  fromUser: boolean;
+};
+
 const ChatPage = () => {
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const [inputMessage, setInputMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(true);
@@ -30,8 +36,11 @@ const ChatPage = () => {
       });
       const { data } = response.data;
 
-      setMessages([...messages, { text: inputMessage, fromUser: true }]);
-      setMessages([...messages, { text: data, fromUser: false }]);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: inputMessage, fromUser: true },
+        { text: data, fromUser: false },
+      ]);
       setInputMessage("");
     } catch (error) {
       console.error("Error sending message:", error);
@@ -51,7 +60,7 @@ const ChatPage = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm mx-auto">
             <h2 className="text-xl font-semibold mb-4">Welcome!</h2>
             <p className="mb-1">
-              Hello! I'm your AI powered information bot. Unfortunately, my
+              Hello! I&apos;m your AI powered information bot. Unfortunately, my
               features are being built right now :(
             </p>
             <p className="mb-6">I hope to talk to you soon!!</p>

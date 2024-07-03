@@ -66,7 +66,7 @@ const Graphs: React.FC = () => {
       <h2 className="text-2xl font-bold mb-4">
         Green Energy Production Trends in India for the last 10 years
       </h2>
-      <Line data={chartData} options={chartOptions} />
+      <Line data={chartData} />
     </div>
   );
 };

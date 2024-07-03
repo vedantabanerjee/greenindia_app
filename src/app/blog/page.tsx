@@ -17,6 +17,8 @@ const Info: React.FC = () => {
   const [blogs, setBlogs] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
+  const NEWS_API_KEY = process.env.NEXT_PUBLIC_NEWS_API_KEY;
+
   useEffect(() => {
     const fetchBlogs = async () => {
       try {

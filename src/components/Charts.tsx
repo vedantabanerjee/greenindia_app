@@ -1,5 +1,3 @@
-// components/ChartPie.tsx
-
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 
@@ -41,7 +39,7 @@ const Chart: React.FC = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top',
+        position: 'top' as const, // Specify a valid position type
       },
     },
   };
@@ -59,5 +57,4 @@ const Chart: React.FC = () => {
   );
 };
 
-export default Chart    ;
-
+export default Chart;

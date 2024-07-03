@@ -6,7 +6,7 @@ THIS IS THE MAP COMPONENT:
   - upon clicking/hovering on the locations, you can checkout a baic set of information from it
 */
 
-import React from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
   LoadScript,
@@ -24,7 +24,6 @@ const center = {
   lng: 78.9629,
 };
 
-// Synthetic data about locations of microgrids in india
 const locations = [
   {
     id: 1,
@@ -762,32 +761,33 @@ const locations = [
   }
 ];
 
-const Map: React.FC = () => {
-  const [selected, setSelected] = React.useState<any>(null);
+const Map = () => {
+  const [selected, setSelected] = useState(null); // State to track selected marker
+
+  const gMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 
   return (
-    // !!!!!!!! V WHEN YOU USE IT ENTER YOUR API KEY DAMMIT !!!!!!!!!
-    <LoadScript googleMapsApiKey="AIzaSyCA7dN3BksC6s0JFrOfpVD2DGnyv766kiw">
+    <LoadScript googleMapsApiKey={gMapsApiKey}>
       <GoogleMap mapContainerStyle={mapContainerStyle} zoom={5} center={center}>
         {locations.map((location) => (
           <Marker
             key={location.id}
             position={{ lat: location.lat, lng: location.lng }}
-            onClick={() => setSelected(location)}
+            onClick={() => setSelected(location)} // Set selected marker when clicked
           />
         ))}
 
-        {selected && (
+        {selected && ( // Show InfoWindow if selected marker is truthy
           <InfoWindow
             position={{ lat: selected.lat, lng: selected.lng }}
-            onCloseClick={() => setSelected(null)}
+            onCloseClick={() => setSelected(null)} // Close InfoWindow on close click
           >
             <div>
-              <h2>Place: {selected.name}</h2>
-              <p>Energy Produced: {selected.type}</p>
+              <h2>{selected.name}</h2>
+              <p>Energy: {selected.energy}</p>
+              <p>Stored: {selected.stored}</p>
               <p>Developer: {selected.developer}</p>
-              <p>Capacity: {selected.energy}</p>
-
+              <p>Type: {selected.type}</p>
             </div>
           </InfoWindow>
         )}
@@ -797,3 +797,11 @@ const Map: React.FC = () => {
 };
 
 export default Map;
+
+
+
+
+
+
+
+
