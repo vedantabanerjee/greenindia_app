@@ -764,7 +764,7 @@ const locations = [
 const Map = () => {
   const [selected, setSelected] = useState(null); // State to track selected marker
 
-  const gMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "AIzaSyCA7dN3BksC6s0JFrOfpVD2DGnyv766kiw";
+  const gMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 
   return (
     <LoadScript googleMapsApiKey={gMapsApiKey}>

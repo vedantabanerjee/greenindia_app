@@ -102,6 +102,10 @@ Blogs Page                 |  Chat Page
 :-------------------------:|:-------------------------:
 ![](/img/blog.png )        |  ![](/img/chat.png)
 
+Blogs Page                 
+:-------------------------:
+![](/img/blog2.png )        
+
 ## Contact
 
 For any questions or suggestions, please contact me on my LinkedIn/Twitter/Email
