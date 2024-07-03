@@ -14,7 +14,7 @@ An application to discover and learn about green energy produced across India. S
 - [Contact](#contact)
 
 ## Overview
-GreenFutureIndia is a web application dedicated to promoting sustainable goals and green energy initiatives in India. Our platform serves as a hub for information, infographics, and actionable insights into the impact of climate change and the efforts being made to combat it across the country.
+GreenIndia is a web application dedicated to promoting sustainable goals and green energy initiatives in India. Our platform serves as a hub for information, infographics, and actionable insights into the impact of climate change and the efforts being made to combat it across the country.
 
 ## Features
 - **Comprehensive Information:** Stay informed with the latest data and research on green energy and climate change affecting India. Our articles, reports, and updates provide a deep dive into the current state and future projections.
@@ -101,6 +101,7 @@ Dasboard Page              |  Dashboard Page
 Blogs Page                 |  Chat Page
 :-------------------------:|:-------------------------:
 ![](/img/blog.png )        |  ![](/img/chat.png)
+
 ## Contact
 
 For any questions or suggestions, please contact me on my LinkedIn/Twitter/Email
