@@ -42,8 +42,8 @@ Contains a chat box with an AI agent to chat about climate change and green ener
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/greenfutureindia.git
-    cd greenfutureindia
+    git clone https://github.com/vedantabanerjee/greenindia_app
+    cd greenindia_app
     ```
 
 2. Install dependencies:
