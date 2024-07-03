@@ -90,7 +90,7 @@ The fight against climate change is a combined effort, I welcome contributions t
 
 ## Images
 
-Landing page               |  Landing Page
+Landing page               
 :-------------------------:|:-------------------------:
 ![](/img/hero1.png)        |  ![](/img/hero2.png)
 
