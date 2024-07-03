@@ -90,13 +90,17 @@ The fight against climate change is a combined effort, I welcome contributions t
 
 ## Images
 
-Landing page               
+Landing Page               |  Landing Page
 :-------------------------:|:-------------------------:
 ![](/img/hero1.png)        |  ![](/img/hero2.png)
 
-Solarized dark             |  Solarized Ocean
+Dasboard Page              |  Dashboard Page
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![](/img/dash1.png)        |  ![](/img/dash2.png)
+
+Blogs Page                 |  Chat Page
+:-------------------------:|:-------------------------:
+![](/img/blog.png )        |  ![](/img/chat.png)
 ## Contact
 
 For any questions or suggestions, please contact me on my LinkedIn/Twitter/Email
