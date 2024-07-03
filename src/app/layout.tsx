@@ -19,8 +19,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Renewablexchange",
-  description: "one stop information application about green energy.",
+  title: "GreenIndia",
+  description: "All information about India's fight against climate change and green energy in one place",
 };
 
 export default function RootLayout({
