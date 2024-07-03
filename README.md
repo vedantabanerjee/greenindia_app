@@ -4,6 +4,7 @@ An application to discover and learn about green energy produced across India. S
 
 ## Table of Contents
 - [Overview](#overview)
+- [Livelink](#livelink)
 - [Features](#features)
 - [Pages](#pages)
 - [Installation](#installation)
@@ -15,6 +16,10 @@ An application to discover and learn about green energy produced across India. S
 
 ## Overview
 GreenIndia is a web application dedicated to promoting sustainable goals and green energy initiatives in India. Our platform serves as a hub for information, infographics, and actionable insights into the impact of climate change and the efforts being made to combat it across the country.
+
+## LiveLink
+The app is currently deployed on vercel: https://greenindia.vercel.app
+Although the link is live and takes you to the site, there are some problems and issues. For model images see the [Images](#images) section.
 
 ## Features
 - **Comprehensive Information:** Stay informed with the latest data and research on green energy and climate change affecting India. Our articles, reports, and updates provide a deep dive into the current state and future projections.
